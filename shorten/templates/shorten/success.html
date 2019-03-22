@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ object.shortcode }}
+{% endblock title %}
+
+{% block styles %}
+    <style>
+        .logo{
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+        }
+        .header{
+            padding: 20px 40px 40px 40px;
+        }
+        .mast{
+            transition: transform 1s;
+        }
+        .mast:hover{
+            transform: scale(1.2);
+        }
+    </style>
+{% endblock styles %}
+
+{% block content %}
+    <div>
+        <div class="mast">
+            <div class="logo">
+                <i class="material-icons" style="color: black;font-size: 80px;">link</i>
+            </div>
+            <div class="header">
+                <h1 style="color: black; font-size: 60px;">{{ title }}</h1>
+            </div>
+        </div>
+        <h4 style="color: #19520d">Shortcode Created</h4>
+        <div>
+            <p><strong>{{ object.url }}</strong></p>
+            <p><strong>Shortened Link : </strong><a href="{{ object.get_short_url }}">{{ object.get_short_url }}</a></p>
+            <a href="/"><button type="button" class="btn btn-secondary">Shorten another URL</button></a>
+        </div>
+    </div>
+{% endblock content %}
