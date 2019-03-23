@@ -32,5 +32,5 @@ class ClippyURL(models.Model):
 
     def get_short_url(self):
         # url_path = reverse('shortcode', kwargs={'shortcode': self.shortcode})
-        url_path = 'http://www.clippy.pythonanywhere.com/' + self.shortcode
+        url_path = 'localhost:8000/' + self.shortcode
         return url_path
