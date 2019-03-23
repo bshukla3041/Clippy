@@ -8,8 +8,8 @@ class SubmitURLForm(forms.Form):
                           validators=[validate_url],
                           widget=forms.TextInput(
                               attrs={
-                                  'placeholder': 'Paste any long URL',
-                                  'class': 'form-control',
+                                  'placeholder': 'Paste any long url to shorten....',
+                                  'class': 'form-control rounded-pill',
                               }
                             )
                           )
