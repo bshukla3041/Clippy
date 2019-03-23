@@ -110,5 +110,3 @@ STATIC_URL = '/static/'
 SHORTCODE_MAX = 15
 SHORTCODE_MIN = 6
 
-# Username = ClippyDev
-# Password = 123ClippyDev123
