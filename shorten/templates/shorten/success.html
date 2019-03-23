@@ -4,39 +4,18 @@
     {{ object.shortcode }}
 {% endblock title %}
 
-{% block styles %}
-    <style>
-        .logo{
-            padding: 10px 10px 10px 10px;
-            text-align: center;
-        }
-        .header{
-            padding: 20px 40px 40px 40px;
-        }
-        .mast{
-            transition: transform 1s;
-        }
-        .mast:hover{
-            transform: scale(1.2);
-        }
-    </style>
-{% endblock styles %}
-
 {% block content %}
-    <div>
-        <div class="mast">
-            <div class="logo">
-                <i class="material-icons" style="color: black;font-size: 80px;">link</i>
+    <div style="padding-top: 230px;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-sm-8">
+                    <div class="response">
+                        <h3 style="color: #000000;"><strong>Shortened URL Created</strong></h3>
+                        <p><strong>Shortened Link : </strong><a href="{{ object.get_short_url }}" class="link">{{ object.get_short_url }}</a></p>
+                        <a href="/"><button type="submit" class="btn btn-info rounded-pill" style="margin-top: 10px;"><strong>Shorten another URL</strong></button></a>
+                    </div>
+                </div>
             </div>
-            <div class="header">
-                <h1 style="color: black; font-size: 60px;">{{ title }}</h1>
-            </div>
-        </div>
-        <h4 style="color: #19520d">Shortcode Created</h4>
-        <div>
-            <p><strong>{{ object.url }}</strong></p>
-            <p><strong>Shortened Link : </strong><a href="{{ object.get_short_url }}">{{ object.get_short_url }}</a></p>
-            <a href="/"><button type="button" class="btn btn-secondary">Shorten another URL</button></a>
         </div>
     </div>
 {% endblock content %}
