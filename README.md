@@ -21,4 +21,4 @@ A URL shortening service developed using django framework, integrataed with Boot
 
 ## Live Demo
   A demo of the project is hosted live on pythonanywhere platform at 
-  [http://clippy.pythonanywhere.com](clippy.pythonanywhere.com)
+  [clippy.pythonanywhere.com](http://clippy.pythonanywhere.com)
