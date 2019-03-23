@@ -18,3 +18,7 @@ A URL shortening service developed using django framework, integrataed with Boot
     python3 manage.py runserver
   ```
 * Access the website in your browser at ```http://localhost:8000```
+
+## Live Demo
+  A demo of the project is live on pythonanywhere platform.
+  [clippy.pythonanywhere.com](clippy.pythonanywhere.com)
