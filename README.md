@@ -6,9 +6,6 @@ A URL shortening service developed using django framework, integrataed with Boot
 ### Installing
 * Create a virtual environment with python3 and pip3 (recommended)
 * Change to project root directory (with manage.py file)
-  ```
-    cd src
-  ```
 * Install required python dependencies 
   ```
     pip3 install -r requirements.txt
