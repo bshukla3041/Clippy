@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Clippy | {% block title %}Shorten any url{% endblock title %}</title>
+
+    {# Link CSS #}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    {# CSS #}
+    <style>
+		html{
+			min-height: 100%;
+			margin: 0;
+            overflow-x: hidden;
+		}
+		body{
+            font-family: 'Raleway', sans-serif;
+            background-color: #ffffff;
+		}
+		.landing, .error{
+			padding-top: 90px;
+		}
+        .form-css{
+			padding-top: 40px;
+			padding-bottom: 20px;
+		}
+        .fa-external-link-square-alt:hover{
+            color: white;
+        }
+	</style>
+
+</head>
+<body>
+
+    {# Messages #}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{message.tags}}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {# Content Block #}
+    {% block content %}
+    {% endblock content %}
+
+    {# Footer #}
+    <footer class="footer container text-center fixed-bottom" style="background-color: white; padding-bottom: 2px">
+        <small class="text-muted">
+            Made with <i class="fas fa-heart" style="color: red"></i> by Bhavesh Shukla<br>
+            Feel free to <a href="https://github.com/bshukla3041/Clippy">contribute</a> :)
+        </small>
+        <br>
+    </footer>
+
+    {# JQuery #}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    {# Complete Bootstrap JavaScript Bundle #}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    {# Script for Copy #}
+    <script>
+        function copy() {
+            let copyText = document.querySelector("#input");
+            copyText.select();
+            document.execCommand("copy");
+        }
+        document.querySelector("#copy").addEventListener("click", copy);
+
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+
+</body>
+</html>

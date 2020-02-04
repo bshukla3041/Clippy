@@ -1,0 +1,34 @@
+{% extends 'shortener/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <div class="container landing">
+		<div class="row justify-content-center text-center">
+			<div class="col-12 col-sm-11 col-md-6">
+                <h1 style="font-size: 50px;"><strong>Clippy</strong></h1>
+                <h3>URL Shortening Service</h3>
+			</div>
+		</div>
+	</div>
+
+    <div class="container" style="padding-top: 10px;">
+        <div class="row well justify-content-center text-center form-css">
+            <div class="col-12 col-sm-11 col-md-6">
+                <form action="." method="POST">{% csrf_token %}
+                    <fieldset class="form-group">
+                        {{ form|crispy}}
+                        <small class="text-muted">
+                            Alias may contain letters, numbers and dashes.
+                        </small>
+                        <hr>
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-info" type="submit"><strong>Shorten</strong></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
