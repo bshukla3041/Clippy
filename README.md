@@ -11,7 +11,7 @@ A simple URL shortening service built using Django.
 ### Clone the repository
 Clone the repository and change to project root directory (where manage.py file is).
 ```
-$ git clone git@github.com:bshukla3041/Clippy.git
+$ git clone https://github.com/bshukla3041/Clippy.git
 $ cd Clippy
 ```
 ### Install the dependencies
