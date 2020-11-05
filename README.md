@@ -1,4 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 
 # Clippy URL Shortener
@@ -18,7 +20,6 @@ $ cd Clippy
   ```
     pip3 install -r requirements.txt
   ```
-* 
 ### Run the application
 * Run the application by starting the local server from project root directory.
   ```
@@ -28,4 +29,4 @@ $ cd Clippy
 * Live Demo of this application is hosted at https://clippy.pythonanywhere.com/
 
 ### License
-CongoCart is distributed under the [MIT License](https://github.com/bshukla3041/Clippy/blob/master/LICENSE). 
+[Clippy](https://github.com/bshukla3041/Clippy) is distributed under the [MIT License](https://github.com/bshukla3041/Clippy/blob/master/LICENSE). 
