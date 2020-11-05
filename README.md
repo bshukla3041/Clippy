@@ -28,5 +28,5 @@ $ cd Clippy
 * Access the application in your browser at http://localhost:8000
 * Live Demo of this application is hosted at https://clippy.pythonanywhere.com/
 
-### License
+## License
 [Clippy](https://github.com/bshukla3041/Clippy) is distributed under the [MIT License](https://github.com/bshukla3041/Clippy/blob/master/LICENSE). 
